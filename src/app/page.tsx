@@ -49,15 +49,15 @@ export default async function Home() {
             <a href="#confession-form" className="w-full sm:w-auto px-10 py-5 bg-red-600 text-white font-bold text-lg uppercase tracking-widest hover:bg-red-700 transition-all duration-300 shadow-[0_0_30px_rgba(220,38,38,0.4)] text-center">
               Prenota una Confessione
             </a>
-            <button className="w-full sm:w-auto px-10 py-5 border border-white/30 text-white font-bold text-lg uppercase tracking-widest hover:border-white hover:bg-white hover:text-black transition-all duration-300">
-              Leggi il Manifesto
-            </button>
+            <a href="#manifesto" className="w-full sm:w-auto px-10 py-5 border border-white/30 text-white font-bold text-lg uppercase tracking-widest hover:border-white hover:bg-white hover:text-black transition-all duration-300 text-center">
+  Leggi il Manifesto
+</a>
           </div>
         </div>
       </section>
 
       {/* 2. DIAGNOSI SECTION */}
-      <section className="bg-white text-black py-24 px-6">
+      <section id="manifesto" className="bg-white text-black py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="mb-20 text-center md:text-left">
             <h2 className="text-red-600 font-bold uppercase tracking-[0.3em] text-sm mb-4">La Diagnosi</h2>
@@ -101,7 +101,7 @@ export default async function Home() {
                     <h4 className="text-xl font-bold mb-3 group-hover:text-red-600 transition-colors">{book.title}</h4>
                     <p className="text-gray-400 text-sm mb-6 line-clamp-3 leading-relaxed flex-grow">{book.description}</p>
                     <a href={book.link} target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center py-3 border border-red-600 text-red-600 font-bold uppercase text-xs tracking-widest hover:bg-red-600 hover:text-white transition-all">
-                      Acquista Ora
+                      Scarica Gratuitamente
                     </a>
                   </div>
                 </div>
