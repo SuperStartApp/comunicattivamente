@@ -112,7 +112,7 @@ export default async function Home() {
                       <h4 className="text-xl font-bold mb-3 group-hover:text-red-600 transition-colors">{book.title}</h4>
                       <p className="text-gray-400 text-sm mb-6 line-clamp-3 leading-relaxed flex-grow">{book.description}</p>
                       <a href={book.link} target="_blank" rel="noopener noreferrer" className="inline-block w-full text-center py-3 border border-red-600 text-red-600 font-bold uppercase text-xs tracking-widest hover:bg-red-600 hover:text-white transition-all">
-                        Acquista Ora
+                        Scarica Gratuitamente
                       </a>
                     </div>
                   </div>
