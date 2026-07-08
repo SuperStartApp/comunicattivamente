@@ -29,9 +29,9 @@ export default async function Home() {
   const { data: books, error } = await supabase
     .from('comunica_books')
     .select('*')
-    .order('is_featured', { ascending: false })
+    .order('priority', { ascending: true, nullsFirst: false }) // I numeri più bassi (1, 2, 3) vanno in alto
     .order('created_at', { ascending: false })
-    .limit(3); // <--- LIMITA A 3 LIBRI PER LA HOME
+    .limit(3);
 
   if (error) {
     console.error('Errore nel recupero libri:', error.message);
